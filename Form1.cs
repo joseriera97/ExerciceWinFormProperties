@@ -18,6 +18,19 @@ namespace WinFormProperties
             InitializeComponent();
             //Introducir los items para la seleccion de tipo de Borde.
             StyleBorder();
+            //Deshabilitar el Focus cuando se da al Tab.
+            targetButton.TabStop = false;
+
+            //Para realizar el orden de Tab
+            //Esta parte se puede hacer directamente en la propiedad de los botones en el apartado TabIndex.
+            borderStyleComboBox.TabIndex = 0;
+            visibleButton.TabIndex = 1;
+            enabledButton.TabIndex = 2;
+            centerButton.TabIndex = 3;
+            upButton.TabIndex = 4;
+            leftButton.TabIndex = 5;
+            rightButton.TabIndex = 6;
+            downButton.TabIndex = 7;
         }
 
         private void visibleButton_Click(object sender, EventArgs e)
